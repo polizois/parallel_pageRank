@@ -13,9 +13,14 @@
     The algorithm accepts as input:
     - The path that contains the data on which the algorithm will be applied.
       The data needed are:
-      - A binary file containing a 2d adjacency matrix of size (NxN) and type
-        (double).The matrix represents a directed graph with N nodes and edges
-        represented by the elements A[i][j] (directed edge from node i to node j).
+      - A binary file containing an adjacency matrix of size (NxN) in sparse
+        representation.So the binary file actually contains an integer array
+        of 2 columns and rows as many as the non-zero elements of the full
+        adjacency matrix.The first column contains the row-number of the non-zero
+        element on the full adjacency matrix and the second column contains the
+        column-number of the element.
+        The matrix represents a directed graph with N nodes and edges defined by
+        the elements A[i][j] (directed edge from node i to node j).
       - A text file containing a 1d array of size (N) and type (string).The
         array contains the label of each node.
       - A binary file containing a 1d array of size (N) and type (double).The
