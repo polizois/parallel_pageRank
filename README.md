@@ -13,8 +13,7 @@ In order to **compile** the programs run the following commands
 
 The programs accept the following arguments:
 1. *(both versions)*: __The path that contains the data on which the algorithm will be applied.__ The data needed are:
-    * *sparseMatrix.bin*: A binary file containing an adjacency matrix of size (NxN) in sparse representation.So the binary file actually contains an integer array of 2 columns and rows as many as the non-zero elements of the full adjacency matrix.The first column contains the row-number of the non-zero element on the full adjacency matrix and the second column contains the column-number of the element.
-The matrix represents a directed graph with N nodes and edges defined by the elements A[i][j] (directed edge from node i to node j).
+    * *sparseMatrix.bin*: A binary file containing an adjacency matrix of size (NxN) in sparse representation.So the binary file actually contains an integer array of 2 columns and rows as many as the non-zero elements of the full adjacency matrix.The first column contains the row-number of the non-zero element on the full adjacency matrix and the second column contains the column-number of the element.The matrix represents a directed graph with N nodes and edges defined by the elements A[i][j] (directed edge from node i to node j).
     * *labels.txt*: A text file containing a 1d array of size (N) and type (string).The
 array contains the label of each node.
     * *matResults.bin*: A binary file containing a 1d array of size (N) and type (double).The
@@ -35,3 +34,8 @@ Both of the programs calculate the PageRank vector of the nodes and print:
   
   
   
+*References:*
+  * *https://en.wikipedia.org/wiki/PageRank*
+  * *https://en.wikipedia.org/wiki/Gauss%E2%80%93Seidel_method*
+  * *https://www.ece.ucsb.edu/~hespanha/published/2018ACC_0753_MS.pdf*
+  * *https://www.mathworks.com/help/matlab/examples/use-page-rank-algorithm-to-rank-websites.html*
