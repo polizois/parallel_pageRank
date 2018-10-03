@@ -215,8 +215,7 @@ int main(int argc, char *argv[])
   // for(i=0;i<25;i++) printf("%d: pr = %f :: outLinks = %d :: %s", i+1, pr[i], (int)outL[i], labels[i]);
 
   // Free Allocated space
-  free(matrix[0]); free(matrix);
-  free(labels[0]); free(labels);
+  for(i=0;i<nodeNum;i++) free(matrix[i]); free(matrix);
   free(pr);
   free(pr_old);
   free(outL);
